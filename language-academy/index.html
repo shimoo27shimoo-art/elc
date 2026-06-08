@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجمع التعليمي للغات بالإسماعيلية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- الرأس والتنقل -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <span>المجمع التعليمي للغات</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.php">الرئيسية</a></li>
+                    <li><a href="#news">الأخبار</a></li>
+                    <li><a href="#gallery">المعرض</a></li>
+                    <li><a href="#teachers">المعلمون</a></li>
+                    <li><a href="#schedules">الجداول</a></li>
+                    <li><a href="login.php" class="login-btn">دخول الأدمن</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- شريط الأخبار المتحرك -->
+    <div class="news-ticker">
+        <div class="ticker-content">
+            <span class="ticker-item">📰 مرحباً بكم في المجمع التعليمي للغات بالإسماعيلية</span>
+            <span class="ticker-item">📰 نحن نقدم أفضل برامج تعليم اللغات الأجنبية</span>
+            <span class="ticker-item">📰 انضموا إلينا واكتشفوا عالماً جديداً من اللغات</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- السلايدر -->
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide" style="background: linear-gradient(135deg, #004a99, #2c3e50);">
+                    <div class="slide-content">
+                        <h2>مرحباً بكم</h2>
+                        <p>في المجمع التعليمي للغات بالإسماعيلية</p>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(135deg, #ff6b35, #f39c12);">
+                    <div class="slide-content">
+                        <h2>تعليم متميز</h2>
+                        <p>برامج تعليمية متقدمة بأحدث الطرق</p>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(135deg, #27ae60, #16a085);">
+                    <div class="slide-content">
+                        <h2>معلمون متخصصون</h2>
+                        <p>فريق تعليمي ذو خبرة عالية</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="slider-dot active" onclick="currentSlide(0)"></div>
+                <div class="slider-dot" onclick="currentSlide(1)"></div>
+                <div class="slider-dot" onclick="currentSlide(2)"></div>
+            </div>
+        </div>
+
+        <!-- الإحصائيات -->
+        <div class="statistics">
+            <div class="stat-card">
+                <div class="stat-number">150</div>
+                <div class="stat-label">طالب مسجل</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">12</div>
+                <div class="stat-label">معلم متخصص</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">جدول دراسي</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25</div>
+                <div class="stat-label">خبر وإعلان</div>
+            </div>
+        </div>
+
+        <!-- الأخبار -->
+        <section class="section" id="news">
+            <div class="section-title">أحدث الأخبار</div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">إطلاق برنامج اللغات الجديد</h3>
+                        <p class="news-excerpt">يسعدنا إعلانكم عن إطلاق برنامج اللغات الجديد الذي يتضمن دورات متقدمة...</p>
+                        <span class="news-date">15/12/2024</span>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">تنظيم مسابقة اللغات السنوية</h3>
+                        <p class="news-excerpt">سيتم تنظيم مسابقة اللغات السنوية في الشهر القادم...</p>
+                        <span class="news-date">10/12/2024</span>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">تحديث المناهج الدراسية</h3>
+                        <p class="news-excerpt">تم تحديث المناهج الدراسية بما يتوافق مع أحدث المعايير العالمية...</p>
+                        <span class="news-date">05/12/2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- معرض الصور -->
+        <section class="section" id="gallery">
+            <div class="section-title">معرض الصور</div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 100%; height: 200px; border-radius: 12px;"></div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">نشاط الطلاب</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); width: 100%; height: 200px; border-radius: 12px;"></div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">الفعاليات</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); width: 100%; height: 200px; border-radius: 12px;"></div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">المنشآت</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- التذييل -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المجمع</h3>
+                    <p>المجمع التعليمي للغات بالإسماعيلية متخصص في تعليم اللغات الأجنبية بأحدث الطرق والمناهج العالمية.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>الروابط السريعة</h3>
+                    <ul>
+                        <li><a href="index.php">الرئيسية</a></li>
+                        <li><a href="#news">الأخبار</a></li>
+                        <li><a href="#gallery">المعرض</a></li>
+                        <li><a href="login.php">دخول الأدمن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>معلومات التواصل</h3>
+                    <ul>
+                        <li>📞 الهاتف: 01001234567</li>
+                        <li>📧 البريد: info@ismailia.edu</li>
+                        <li>📍 العنوان: الإسماعيلية، مصر</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 المجمع التعليمي للغات بالإسماعيلية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
